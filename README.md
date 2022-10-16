@@ -119,6 +119,16 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
 │   ├── trex_test    # downloaded logs
 ```
 
+Note that the `.tar` files are **not** regular archives, and thus can not be unarchived with `tar` cli. These files were saved by `torch` and are loaded by `torch`.
+
+To run the pre-trained model, for example `lego`:
+
+```bash
+python run_nerf.py --config configs/lego.txt --render_only --expname lego_test
+```
+
+> The provided `--expname` will override the one provided in the config file
+
 ### Reproducibility 
 
 Tests that ensure the results of all functions and training loop match the official implentation are contained in a different branch `reproduce`. One can check it out and run the tests:
