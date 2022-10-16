@@ -16,6 +16,13 @@ cd nerf-pytorch
 pip install -r requirements.txt
 ```
 
+If you are using `conda` (or `mamba`) you can create a `conda` virtual environment as follows -
+
+```bash
+mamba env create -f env.yaml
+mamba activate nerf-torch
+```
+
 <details>
   <summary> Dependencies (click to expand) </summary>
   
